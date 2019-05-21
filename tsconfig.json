@@ -20,6 +20,10 @@
     "moduleResolution": "node",
     "esModuleInterop": true
   },
+   "baseUrl": "./src",
+    "paths": {
+      "@leicht/rekvaest": ["src/Rekvaest.ts"]
+    },
   "include": [
     "src/**/*.ts"
   ],

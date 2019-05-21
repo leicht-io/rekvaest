@@ -1,6 +1,6 @@
 {
   "name": "@leicht.io/rekvaest",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,9 +20,5 @@
   "devDependencies": {
     "parcel": "^1.12.3",
     "typescript": "^3.4.5"
-  },
-   "baseUrl": "./src",
-    "paths": {
-      "@leicht/rekvaest": ["src/Rekvaest.ts"]
-    }
+  }
 }
