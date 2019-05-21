@@ -1,0 +1,13 @@
+enum HttpTypes {
+    GET = 'GET',
+    POST = 'POST',
+    PUT = 'PUT',
+    DELETE = 'DELETE',
+    PATCH = 'PATCH',
+    HEAD = 'HEAD',
+    TRACE = 'TRACE',
+    OPTIONS = 'OPTIONS',
+    CONNECT = 'CONNECT'
+}
+
+export default HttpTypes;
