@@ -3,7 +3,7 @@ import HttpTypes from "./models/HttpTypes";
 import HttpHeaders from "./models/HttpHeaders";
 import ContentType from "./utils/headers/ContentType";
 
-export default class Rekvaest {
+export class Rekvaest {
     public static get = (url: string): Promise<any> => {
         return new Promise((resolve, reject) => {
             const xmlHttpRequest = new XMLHttpRequest();
