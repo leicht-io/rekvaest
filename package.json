@@ -1,11 +1,12 @@
 {
   "name": "@leicht.io/rekvaest",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "deploy": "npm publish",
     "demo": "parcel ./examples/index.html --out-dir ./examples/dist"
   },
   "repository": {

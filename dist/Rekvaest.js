@@ -29,4 +29,27 @@ Rekvaest.get = (url) => {
         xmlHttpRequest.send();
     });
 };
+Rekvaest.post = (url, data) => {
+    return new Promise((resolve, reject) => {
+        const xmlHttpRequest = new XMLHttpRequest();
+        xmlHttpRequest.open(HttpTypes.POST, url);
+        xmlHttpRequest.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xmlHttpRequest.onload = () => {
+            if ((xmlHttpRequest.status < HttpStatusCode.OK || xmlHttpRequest.status >= HttpStatusCode.MULTIPLE_CHOICES)) {
+                reject({ request: xmlHttpRequest });
+            }
+            else {
+                resolve(Rekvaest.map(xmlHttpRequest));
+            }
+        };
+        xmlHttpRequest.onerror = function () {
+            reject({ request: xmlHttpRequest });
+        };
+        xmlHttpRequest.send(data);
+    });
+};
+Rekvaest.delete = () => {
+};
+Rekvaest.upload = () => {
+};
 //# sourceMappingURL=Rekvaest.js.map
