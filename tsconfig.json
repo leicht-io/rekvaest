@@ -18,12 +18,9 @@
     "forceConsistentCasingInFileNames": true,
     "suppressImplicitAnyIndexErrors": true,
     "moduleResolution": "node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
-   "baseUrl": "./src",
-    "paths": {
-      "@leicht/rekvaest": ["src/Rekvaest.ts"]
-    },
   "include": [
     "src/**/*.ts"
   ],
