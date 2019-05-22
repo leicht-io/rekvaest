@@ -1,17 +1,25 @@
 {
   "name": "@leicht.io/rekvaest",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "demo": "parcel ./example/index.html --out-dir ./example/dist"
+    "demo": "parcel ./examples/index.html --out-dir ./examples/dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leicht-io/requesto.git"
   },
+    "files": [
+    "/src",
+    "/dist",
+	"/index.ts",
+    "/package.json",
+    "/package-lock.json",
+    "/README.md"
+  ],
   "bugs": {
     "url": "https://github.com/leicht-io/requesto/issues"
   },
