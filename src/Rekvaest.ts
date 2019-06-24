@@ -26,6 +26,8 @@ export class Rekvaest {
     public static post = (url: string, data: FormData): Promise<any> => {
         return new Promise((resolve, reject) => {
             const xmlHttpRequest = new XMLHttpRequest();
+            const urlSearchParams: string = new URLSearchParams(data as any).toString();
+
             xmlHttpRequest.open(HttpTypes.POST, url);
             xmlHttpRequest.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
@@ -39,7 +41,7 @@ export class Rekvaest {
             xmlHttpRequest.onerror = function () {
                 reject({request: xmlHttpRequest});
             };
-            xmlHttpRequest.send(data);
+            xmlHttpRequest.send(urlSearchParams);
         });
     };
 

@@ -32,6 +32,7 @@ Rekvaest.get = (url) => {
 Rekvaest.post = (url, data) => {
     return new Promise((resolve, reject) => {
         const xmlHttpRequest = new XMLHttpRequest();
+        const urlSearchParams = new URLSearchParams(data).toString();
         xmlHttpRequest.open(HttpTypes.POST, url);
         xmlHttpRequest.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         xmlHttpRequest.onload = () => {
@@ -45,7 +46,7 @@ Rekvaest.post = (url, data) => {
         xmlHttpRequest.onerror = function () {
             reject({ request: xmlHttpRequest });
         };
-        xmlHttpRequest.send(data);
+        xmlHttpRequest.send(urlSearchParams);
     });
 };
 Rekvaest.delete = () => {
