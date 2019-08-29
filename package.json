@@ -13,10 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/leicht-io/requesto.git"
   },
-    "files": [
+  "files": [
     "/src",
     "/dist",
-	"/index.ts",
+    "/index.ts",
     "/package.json",
     "/package-lock.json",
     "/README.md"
